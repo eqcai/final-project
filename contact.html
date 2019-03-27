@@ -84,21 +84,21 @@ REQUIREMENTS:
         <fieldset>
           <legend><span class="number">1</span>Your basic info</legend>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
+          <input type="text" id="name" name="user_name" class="text-input" required>
 <br>
           <label for="mail">Email:</label>
-          <input type="email" id="mail" name="user_email">
+          <input type="email" id="mail" name="user_email" class="text-input" required>
 <br>
           <label for="password">Phone #:</label>
-          <input type="password" id="password" name="user_password">
+          <input type="tel" id="password" name="user_password" class="text-input">
 <br>
           <label>What is your BCIT student status?</label>
 <br>
-          <input type="radio" id="yes" value="yes" name="yes">
+          <input type="radio" id="yes" value="yes" name="yes" class="radio-input">
           <label for="yes" class="yes">Current</label>
           <br>
 
-          <input type="radio" id="no" value="no" name="no">
+          <input type="radio" id="no" value="no" name="no" class="radio-input">
           <label for="no" class="no">Prospective</label>
         </fieldset>
         <fieldset>
