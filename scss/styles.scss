@@ -5,7 +5,7 @@
 
 // Utility Imports
 @import 'functions';
-@import 'variables';
+@import 'variables'; /*body font-family is here*/
 @import 'mixins';
 @import 'placeholders';
 
@@ -14,7 +14,14 @@
 @import 'typography';
 
 // Site Sections
+@import 'body';
+@import 'wrapper';
+
+
+
+
 @import 'schedule_grid';
+@import 'lessons'
 
 // Specialty Items
 

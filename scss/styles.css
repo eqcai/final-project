@@ -1,4 +1,5 @@
 /* CSS Document */
+/*body font-family is here*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -39,6 +40,16 @@ section h1 {
 
 main li {
   line-height: 1.8;
+}
+
+body {
+  background-color: #e7e7e7;
+}
+
+.wrapper {
+  max-width: 1024px;
+  background-color: white;
+  margin: 0 auto;
 }
 
 .schedule {
@@ -117,5 +128,19 @@ main li {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: day12;
+}
+
+.lesson-items {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "lesson lesson lesson" "lesson lesson lesson" "lesson lesson lesson" "lesson lesson lesson";
+}
+
+.lesson {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: lesson;
 }
 /*# sourceMappingURL=styles.css.map */
