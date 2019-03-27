@@ -247,7 +247,6 @@ footer nav a:hover, footer nav a:focus, footer nav a:active {
 main article {
   display: block;
   padding: 20px;
-  border: 1px solid black;
   margin-bottom: 20px;
 }
 
@@ -286,6 +285,10 @@ article figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.topic-summary article {
+  border: solid black 1px;
 }
 
 .topic-summary {
@@ -348,7 +351,7 @@ main {
 
 fieldset {
   border: none;
-  padding: 15px;
+  padding: 10px;
 }
 
 form {
@@ -362,14 +365,14 @@ form {
 }
 
 label {
-  padding: 12px 12px 12px 0;
+  padding: 10px 10px 10px 0;
   display: inline-block;
 }
 
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 5px;
 }
 
 .btn-submit {
@@ -377,7 +380,7 @@ label {
   width: 320px;
   margin: 0 auto;
   padding: 5px;
-  height: 20px;
+  height: 30px;
 }
 
 h1 {
@@ -413,7 +416,7 @@ textarea {
   width: 300px;
   height: 30px;
   border-radius: 5px;
-  padding: 15px;
+  padding: 25px;
 }
 
 #yes {
@@ -453,6 +456,30 @@ input[type=submit] {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "day1 day2 day3" "day4 day5 day6" "day7 day8 day9" "day10 day11 day12";
+}
+
+.schedule {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.schedule-content {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.course-schedule {
+  background-color: white;
+  margin: 0 auto;
+  border: none;
 }
 
 .schedule-content-1 {
@@ -525,30 +552,6 @@ input[type=submit] {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: day12;
-}
-
-.schedule {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 300px 300px 300px;
-      grid-template-columns: 300px 300px 300px;
-  grid-gap: 20px;
-  background-color: white;
-  font-size: 10px;
-}
-
-.schedule-content {
-  background-color: lightgrey;
-  color: black;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-
-.course-schedule {
-  background-color: white;
-  margin: 0 auto;
-  border: none;
 }
 
 .lesson-plan {
