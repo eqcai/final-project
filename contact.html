@@ -36,9 +36,16 @@ REQUIREMENTS:
 </head>
 <body>
 
+  <div class="wrapper">
   <header>
     <a href="#" class="about-banner"><img class="banner" src="images/bcit-home.jpg" alt="bcit banner"/></a>
-  
+ 
+    <button class="hamburger" id="hamburger">
+      <div class="hamburger-content" tabindex="-1">
+          <span class="text">Menu</span>
+          <span class="bar"></span>
+      </div><!-- end button-content -->
+      </button>
     <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -46,12 +53,7 @@ REQUIREMENTS:
       <li><a href="schedule.html">Schedule</a></li>
       <li><a href="lessons.html">Lesson</a></li>
       <li><a href="contact.html">Contact</a></li>
-    </ul>  <button class="hamburger" id="hamburger">
-      <div class="hamburger-content" tabindex="-1">
-          <span class="text">Menu</span>
-          <span class="bar"></span>
-      </div><!-- end button-content -->
-      </button>
+    </ul>  
   
   </nav>
   </header>
@@ -79,7 +81,7 @@ REQUIREMENTS:
     </div>
 
   <!-- FORM -->
-  <div class="wrapper wrapper-contact-page">
+  <div class="wrapper-contact-page">
     <form action="#" method="post">
         <fieldset>
           <legend><span class="number">1</span>Your basic info</legend>
@@ -141,5 +143,6 @@ REQUIREMENTS:
   <p>&copy; 2019 BCIT</p>
     <p>For Educational Use Only</p>
 </footer>
+</div>
 </body>
 </html>
