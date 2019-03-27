@@ -48,3 +48,25 @@
 
 
 
+.schedule {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 20px;
+    background-color: white;
+    font-size: 10px;
+  }
+  
+  .schedule-content {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  
+  .course-schedule {
+    background-color: white;
+    margin:0 auto;
+    border:none;
+  }
+  
