@@ -1,3 +1,29 @@
-body {
-    background-color: #e7e7e7;
-}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, sans-serif;
+      font-weight: bold;
+  }
+  
+  
+  
+  .wrapper {
+      border-radius: 10px;
+      border: solid black 5px;
+      background-color: white;
+      margin: 0 auto;
+      max-width: 1024px;
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+  body {
+      font-family: Verdana, Geneva, sans-serif;
+      background-color: #e7e7e7; 
+    }
+    
+  
+   main {
+      display: flex;	
+  }
+  
