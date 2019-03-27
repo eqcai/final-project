@@ -205,6 +205,15 @@ footer p {
   }
 }
 
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer nav ul {
   margin: 0;
   padding: 0;
@@ -213,9 +222,6 @@ footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 footer nav a {
@@ -226,12 +232,12 @@ footer nav a {
   border-right: 5px solid white;
 }
 
-footer nav li:last-child a {
-  border-right: none;
-}
-
 footer nav a:hover, footer nav a:focus, footer nav a:active {
   text-decoration: underline;
+}
+
+footer nav li:last-child a {
+  border-right: none;
 }
 
 @media (max-width: 41.875em) {
@@ -362,28 +368,20 @@ form {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 0 10px #465788;
           box-shadow: 0 0 0 10px #465788;
+  padding: 30px;
 }
 
-label {
-  padding: 10px 10px 10px 0;
-  display: inline-block;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 5px;
-}
-
-.btn-submit {
+form .btn-submit {
   background-color: #465788;
-  width: 320px;
-  margin: 0 auto;
+  display: block;
+  width: 100%;
   padding: 5px;
   height: 30px;
+  border: none;
+  color: white;
 }
 
-h1 {
+form h1 {
   background-color: white;
   width: 200px;
   margin: 0 auto;
@@ -393,7 +391,7 @@ h1 {
   font-size: 25px;
 }
 
-.number {
+form .number {
   color: white;
   height: 20px;
   width: 20px;
@@ -405,44 +403,19 @@ h1 {
   padding: 4px;
 }
 
-textarea {
+form textarea {
   height: 75px;
-  width: 300px;
+  width: 100%;
   background-color: lightgrey;
   border-radius: 5px;
 }
 
-#mail, #name, #student_number {
-  width: 300px;
+form .text-input {
+  display: block;
+  width: 100%;
   height: 30px;
   border-radius: 5px;
   padding: 25px;
-}
-
-#yes {
-  float: left;
-}
-
-#no {
-  float: left;
-}
-
-input {
-  background-color: lightgrey;
-  color: white;
-  width: 100%;
-  vertical-align: middle;
-  border-radius: 5px;
-}
-
-input[type=submit] {
-  background-color: #465788;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
 }
 
 .home-topic img {
@@ -487,6 +460,10 @@ input[type=submit] {
 .schedule-content:hover {
   background-color: grey;
   color: white;
+}
+
+.schedule-content:hover a {
+  color: #e2f0ff;
 }
 
 .course-schedule {

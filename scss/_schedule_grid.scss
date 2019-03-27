@@ -32,6 +32,10 @@
   .schedule-content:hover {
       background-color: grey;
       color: white;
+
+      a {
+          color: $link-color-2;
+      }
   }
   
   .course-schedule {
