@@ -1,0 +1,32 @@
+nav {
+    color: #465788;
+    display: flex;
+    border-radius: 20px;
+  }
+  
+  header nav ul {
+    background:#465788;
+    width: auto;
+    list-style: none;
+    display: flex;
+    flex:1;
+    margin: 0;
+    padding: 0;
+    line-height: 4;
+    justify-content: space-around; 
+  }
+  
+  header nav a {
+      text-decoration: none;
+      font-size: 1.3em;
+      line-height: 46px;
+      display: flex;
+    color: white;
+  }
+  
+  header nav a:hover,
+  header nav a:focus,
+  header nav a:active {
+      background-color: #94b7eb;
+  }
+  
