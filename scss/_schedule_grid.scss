@@ -17,7 +17,7 @@
   .schedule-content {
     background-color: lightgrey;
     color: black;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px;
     font-size: 14px;
 
@@ -30,11 +30,13 @@
   }
 
   .schedule-content:hover {
-      background-color: grey;
+      background-color: lightsteelblue;
       color: white;
+      transition: 0.2s ease-in-out;
 
       a {
           color: $link-color-2;
+          transition: 0.2s ease-in-out;
       }
   }
   

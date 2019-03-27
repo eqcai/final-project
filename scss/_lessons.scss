@@ -17,19 +17,29 @@
     align-content: center;
 }
 
+.lesson {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 14px;
+
+    a:link {
+        color: $link-color;
+    }
+    a:visited {
+        color: $link-color;
+    }
+  }
+
+
+
 .lesson-topic {
     a:link {
         color: $link-color;
         text-decoration: none;
     }
 }
-
-
-
-
-
-
-
 
 
 
