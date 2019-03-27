@@ -1,69 +1,39 @@
-// Hamburger Styles
 .hamburger {
-
     display: none;
-
-    @media (max-width: $phoneLandscape){
-        display: block;
-        width: 40px;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        cursor: pointer;
     
-        .hamburger-content {
-            height: 24px;
+    @include mq($tabletPortrait){
+
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 37px;
+        height: 37px;
+        margin-right: 1em;
+        @include flex-center;
+        cursor: pointer;
+
+        .hamburger-icon {
+            color: $text-dark;
+            line-height: 1;
+            font-size: 3.4em;
         }
 
-        .text {
-            @include visually-hidden;
-        }
-
-        .bar {
-            $transition: all 0.3s ease-in-out;
-            $bar-height: 4px;
-            @mixin bar($pos-neg: '') {
-                content: "";
-                width: 100%;
-                height: $bar-height;
-                top: #{$pos-neg}10px;
-                left: 0;
-                background-color: white;
-                position: absolute;
-                transition: $transition;
-                .show & {
-                    top: 0;
-                    transform: rotate(#{$pos-neg}45deg);
-                }
-            }
-
-            display: block;
-            height: $bar-height;
-            width: 100%;
-            position: relative;
-            top: 10px;
-            transition: $transition;
-
-            .show & {
-                background-color: transparent;
-            }
-
-            &:after {
-               @include bar;
-            }
-            &:before {
-               @include bar('-');
-            }
-        }
-
-        &:focus,
-        .hamburger-content:focus {
+        .hamburger:focus,
+        .hamburger-icon:focus {
             outline: none;
         }
 
-        &:focus .hamburger-content {
-            outline: 5px solid #7683C9;
+        .hamburger:focus .hamburger-icon {
+            outline: 5px solid rgba($site-blue, 0.5);
         }
-    
+
+        .hamburger-text {
+            @include hide;
+        }
+
     }
+
 }
+
