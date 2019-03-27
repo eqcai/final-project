@@ -229,7 +229,7 @@ footer nav a {
   color: white;
   display: block;
   padding: 0 20px;
-  border-right: 5px solid white;
+  border-right: 2px solid white;
 }
 
 footer nav a:hover, footer nav a:focus, footer nav a:active {
@@ -444,7 +444,7 @@ form .text-input {
 .schedule-content {
   background-color: lightgrey;
   color: black;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 20px;
   font-size: 14px;
 }
@@ -458,12 +458,16 @@ form .text-input {
 }
 
 .schedule-content:hover {
-  background-color: grey;
+  background-color: lightsteelblue;
   color: white;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .schedule-content:hover a {
-  color: #e2f0ff;
+  color: ivory;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .course-schedule {
@@ -563,6 +567,22 @@ form .text-input {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.lesson {
+  background-color: lightgrey;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.lesson a:link {
+  color: #2c3d77;
+}
+
+.lesson a:visited {
+  color: #2c3d77;
 }
 
 .lesson-topic a:link {
