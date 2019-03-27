@@ -413,8 +413,106 @@
             </ul>
         </p>
 
-        <h2></h2>
-  
+        <h2>Adjacent Sibling Selectors</h2>
+        <p>
+            <ul>
+                <li>The + combinator specifies the first sibling tag following the root</li>
+                <li>It will not include the root for styling</li>
+                <li><strong>div + h2</strong> will select the first sibling h2 following a div tag</li>
+            </ul>
+        </p>
+
+        <h2>General Sibling Selectors</h2>
+        <p>
+            <ul>
+                <li>The ~ combinator specifies all siblings tags following the root</li>
+                <li>It will not select sibling tags that precede the root, nor will it include the root</li>
+                <li><strong>h1 ~ h2</strong> will select all sibling h2 tags that follow an h1</li>
+            </ul>
+        </p>
+
+        <h2>Attribute Selectors</h2>
+        <p>
+            <ul>
+                <li>You can also select elements by what the element contains</li>
+                <li>The method is: <strong>element[attribute=value]</strong></li>
+                <li>If you specify an attribute with no value, you will match any element that simply has the attribute present (no matter what it's value is)</li>
+                <li><strong>p[align] {color: red;}</strong> will turn red any paragraph that contains an align attribute</li>
+                <li>Similarly, <strong>img[alt] {border: 1pt red solid; }</strong> will draw a red line around all images with an alt attribute</li>
+                <li>You can further direct the attribute selector to find content that is at the beginning (using the carat: ^), somewhere inside (using the asterisk: *) or end of a value (using the dollar sign: $)</li>
+                <li>Attribute selector examples: 
+                    <ul>
+                        <li><strong>img[alt]</strong> - select all img tags that have alt attributes</li>
+                        <li><strong>img[src="images/pic.jpg"]</strong> - select all img tags whose src is 'images/pic.jpg'</li>
+                        <li><strong>img[src^="gallery/"]</strong> - select all img tags whose src BEGINS with 'gallery/'</li>
+                        <li><strong>img[src*="logo"]</strong> - select all img tags whose src CONTAINS 'logo'</li>
+                        <li><strong>img[src$=".png"]</strong> - select all img tags whose src ENDS with '.png'</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+
+        <h2>Rule Order & Specificity</h2>
+        <p>When a style declaration is found to be in conflict with a previously declared style, there is a method for determining which one will win out. The process is built into every web browser, and almost all of them calculate the values identically (for once!).</p>
+        <p>Here is how the W3C defines the process by which style order is determined:
+            <ul>
+                <li><strong>Discover all declarations.</strong>Find all declarations that apply to the element and property in question, for the target media type. Declarations apply if the associated selector matches the element in question.</li>
+                <li><strong>Sheet Order</strong>The primary sort of the declarations is by weight and origin: for normal declarations, author style sheets override user style sheets which override the default style sheet.
+                    <ul>
+                        <li><em>Note:</em> For "!important" declarations, user style sheets override author style sheets which override the default style sheet. "!important" declaration override normal declarations. An imported style sheet has the same origin as the style sheet that imported it.</li>
+                    </ul>
+                </li>
+                <li><strong>Specificity:</strong>The secondary sort is by specificity of selector: more specific selectors will override more general ones. Pseudo-elements and pseudo-classes are counted as normal elements and classes, respectively.</li>
+                <li><strong>Sort by Order:</strong>Finally, sort by order specified: if two rules have the same weight, origin and specificity, the latter specified wins. Rules in imported style sheets are considered to be before any rules in the style sheet itself.</li>
+            </ul>
+        </p>
+        <p>All of the rules are pretty straightforward, except for Specificity, which bears some explanation.</p>
+        <p><strong>Specificity</strong>is a method for determining what rules are applied when a conflict between two selectors occurs. Through a method of adding values when certain elements and selectors are present, a specificity number can be applied to any CSS rule. The one with highest specificity wins and the associated rule is applied to the element(s) in question.</p>
+
+        <h2>Ruleset for Specificity</h2>
+        <p>Style sheets can also override conflicting style sheets based on their level of specificity, where a more specific style will always win out over a less specific one. It is simply a counting game to calculate the specificity of a selector.
+            <ol>
+                <li>Count the number of IDs in the selector.</li>
+                <li>Count the number of CLASS, pseudoclass, and attribute selectors.</li>
+                <li>Count the number of HTML tag names in the selector.</li>
+            </ol>
+        </p>
+        <p>Next, write the three numbers in exact order with no spaces or commas to obtain a three digit number. (Note, you may need to convert the numbers to a larger base to end up with three digits.) The final list of numbers corresponding to selectors will easily determine specificity with the higher numbers winning out over lower numbers. Following is a list of selectors sorted by specificity:
+            <ul>
+                <li>#id1 <br>
+                    /* <strong>id</strong>=1 <strong>class</strong>=0 <strong>HTML</strong>=0 --> specificity = 100 */
+                </li>
+                <li>UL UL LI.red <br>
+                    /* <strong>id</strong>=0 <strong>class</strong>=1 <strong>HTML</strong>=3 --> specificity = 013 */
+                </li>
+                <li>LI.red <br>
+                    /* <strong>id</strong>=0 <strong>class</strong>=1 <strong>HTML</strong>=1 --> specificity = 011 */
+                </li>
+                <li>LI
+                    /* <strong>id</strong>=0 <strong>class</strong>=0 <strong>HTML</strong>=1 --> specificity = 001 */
+                </li>
+            </ul>
+        </p>
+
+        <h2>!important rule</h2>
+        <p>
+            <ul>
+                <li>This declaration, when added to a rule, will override almost all other declarations, with no respect for specificity.</li>
+                <li>It indicates that this rule should take over any previous rules that might govern a specific element.</li>
+                <li>Example <strong>.selector{ color:blue !important; }</strong></li>
+                <li>This rule can cause havoc if overused, as it will overrule any other declaration with the same selector. Be careful with <strong>!important</strong></li>
+            </ul>
+        </p>
+
+        <h2>To Do</h2>
+        <p>
+            <ul>
+                <li>Download, review, and complete the homework assignment from <a href="https://learn.bcit.ca/">D2L</a></li>
+                <li>Find a partner for your homework</li>
+                <li>Practice using <a href="http://bcitcomp.ca/1950/lecture/03/#advanced_selectors">advanced CSS selectors</a></li>
+            </ul>
+        </p>
+
     </article>
 
   </main>
