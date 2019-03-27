@@ -456,24 +456,37 @@ input[type=submit] {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "day1 day2 day3" "day4 day5 day6" "day7 day8 day9" "day10 day11 day12";
-}
-
-.schedule {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 300px 300px 300px;
       grid-template-columns: 300px 300px 300px;
   grid-gap: 20px;
   background-color: white;
-  font-size: 14px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .schedule-content {
   background-color: lightgrey;
   color: black;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 20px;
-  font-size: 150%;
+  font-size: 14px;
+}
+
+.schedule-content a:link {
+  color: #2c3d77;
+}
+
+.schedule-content a:visited {
+  color: #2c3d77;
+}
+
+.schedule-content:hover {
+  background-color: grey;
+  color: white;
 }
 
 .course-schedule {
@@ -563,6 +576,21 @@ input[type=submit] {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "i ii iii" "iv v vi" "vii iix ix" "x xi xii";
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  grid-gap: 20px;
+  background-color: white;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.lesson-topic a:link {
+  color: #2c3d77;
+  text-decoration: none;
 }
 
 .lesson-1 {

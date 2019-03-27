@@ -8,7 +8,30 @@
     "iv v vi"
     "vii iix ix"
     "x xi xii";
+
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 20px;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
 }
+
+.lesson-topic {
+    a:link {
+        color: $link-color;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .lesson-1 {
     grid-area: i;
