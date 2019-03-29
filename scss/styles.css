@@ -77,12 +77,20 @@ main {
   margin: 0 auto;
 }
 
+.banner {
+  display: block;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav {
   color: #465788;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 header nav ul {
@@ -297,6 +305,25 @@ article figure {
   border: solid black 1px;
 }
 
+.about-course article {
+  background-color: lightgrey;
+  margin: 0 auto;
+  padding: 20px;
+  border: solid black 1px;
+}
+
+.about-comp-1950 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  background-color: red;
+}
+
 .topic-summary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,17 +354,6 @@ article figure {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-/* Box Sizing Reset */
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
 }
 
 main {
@@ -416,6 +432,11 @@ form .text-input {
   height: 30px;
   border-radius: 5px;
   padding: 25px;
+}
+
+.teacher-contact {
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .home-topic img {

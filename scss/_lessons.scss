@@ -18,21 +18,44 @@
 }
 
 .lesson {
-    background-color: lightgrey;
-    color: black;
+    background-color: darken(lightsteelblue,0.2);
+    color: white;
     border-radius: 10px;
     padding: 20px;
     font-size: 14px;
+    border: 2px solid rgb(55, 102, 141);
+
+    a:link {
+        color: $link-color-2;
+        text-decoration: none;
+    }
+    a:visited {
+        color: $link-color-2;
+        text-decoration: none;
+    }
+
+    h3 {
+        text-align: center;
+    }
+  }
+
+.lesson:hover {
+    background-color: lightgrey;
+    color: black;
+    transition: 0.3s ease-in-out;
 
     a:link {
         color: $link-color;
+        transition: 0.3s ease-in-out;
     }
     a:visited {
         color: $link-color;
     }
-  }
-
-
+    a:hover {
+        color: $link-hover;
+        text-decoration: underline;
+    }
+}
 
 .lesson-topic {
     a:link {
