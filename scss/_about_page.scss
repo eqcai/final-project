@@ -1,7 +1,33 @@
   
-  .about-comp-1950 div {
-    display: flex;
+  .about-comp-1950  {
     flex-direction: column;
-    margin: 0 auto;
-    background-color: red;
+    display: block;
+	padding: 20px;
+    margin-bottom: 30px;
+
   }
+
+  .comp-1950 {
+      display: block;
+      padding:20px;
+      margin: 0 auto;
+      border: solid black 1px;
+      margin-top: 20px;
+  }
+
+  .about-image {
+    max-width: 70%;
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+}
+  
+
+.about-comp-1950 {
+    display: block;
+    padding:20px;
+    margin: 0 auto;
+    border: solid black 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

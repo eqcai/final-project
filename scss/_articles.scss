@@ -27,22 +27,33 @@ main article {
 
   article figure {
     margin: 0 20px 10px 0;
-    padding: 9px;
+    padding: 7px;
     background-color: white;
     border: 1px solid #666;
     float: left;
   }
 
  .home-articles {
-   width: 45%;
+   width: 35%;
    background-color: lightgrey;
    margin: 0 20px 10px 0;
    align-items: center;
 
  }
 
+ .index-outcome {
+  display: block;
+  padding:20px;
+  margin: 0 auto;
+  border: solid black 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
  .topic-summary article {
    border: solid black 1px;
+   margin:0 20px 0 20px;
+   margin-bottom: 30px;
  }
 
  .about-course article{
@@ -51,3 +62,15 @@ main article {
   padding:20px;
   border: solid black 1px;
 }
+
+.outline-article {
+  border: solid black 1px;
+  display: flex;
+  margin: 20px;
+  font-size: 15px;
+}
+
+// .outline-article p{
+//   width: 50%;
+
+// }
