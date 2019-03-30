@@ -2,7 +2,7 @@
   .about-comp-1950  {
     flex-direction: column;
     display: block;
-	padding: 20px;
+	  padding: 20px;
     margin-bottom: 30px;
 
   }
@@ -15,13 +15,29 @@
       margin-top: 20px;
   }
 
-  .about-image {
-    max-width: 70%;
-    border-radius: 80%;
-    width: 200px;
-    height: 200px;
+//   .about-image {
+//     max-width: 70%;
+//     border-radius: 80%;
+//     width: 200px;
+//     height: 200px;
+// }
+
+.about-course {
+  margin:0 auto;
+  padding:20px;
+  border: solid black 1px;
+  padding: 20px;
+  
 }
   
+.featured-image {
+  width: 300px;
+  height: 300px; 
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+}
 
 .about-comp-1950 {
     display: block;
