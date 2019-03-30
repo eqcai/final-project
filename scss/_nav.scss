@@ -15,13 +15,19 @@ nav {
     padding: 0;
     line-height: 4;
     justify-content: space-around;
+    text-align: center;
+  }
+
+  header nav ul li {
+    width: 100%;
+    text-align: center;
   }
 
   header nav a {
-      text-decoration: none;
-      font-size: 1.3em;
-      line-height: 46px;
-      display: flex;
+    text-decoration: none;
+    font-size: 1.3em;
+    line-height: 46px;
+    display: block;
     color: white;
   }
 
