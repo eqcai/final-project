@@ -1,6 +1,9 @@
-.lesson-plan {
-    display: grid;
-}
+// .lesson-plan {
+//     display: grid;
+//     background-color: slateblue;
+//     align-content: center;
+//     justify-content: center;
+// }
 .lesson-items {
     display: grid;
     grid-template-areas: 
@@ -9,7 +12,7 @@
     "vii iix ix"
     "x xi xii";
 
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(3, 30%);
     grid-gap: 20px;
     background-color: white;
     width: 100%;
@@ -104,5 +107,37 @@
 }
 
 
+@media only screen and (max-width: 775px) {
+    .lesson-items {
+        grid-template-areas: 
+        "i ii"
+        "iii iv" 
+        "v vi"
+        "vii iix"
+        "ix x"
+        "xi xii";
+        grid-template-columns: repeat(2,50%);
+      }
+    
+}
 
+@media only screen and (max-width: 500px) {
+    .lesson-items {
+        grid-template-areas: 
+        "i" 
+        "ii" 
+        "iii" 
+        "iv" 
+        "v" 
+        "vi" 
+        "vii" 
+        "iix" 
+        "ix" 
+        "x" 
+        "xi" 
+        "xii";
+        grid-template-columns: 100%;
+      }
+    
+}
 
