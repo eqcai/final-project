@@ -4,3 +4,33 @@
     @include center;
 }
 
+@media only screen and (min-width:320px){
+
+    nav footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width:100%;
+    }
+
+    article {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-radius: 50px;
+      padding: 25px;
+      max-width: 100%;
+      margin-top: 30px;
+    }
+
+
+//     h1,h2 {
+//       font-size: 60%;
+//       align-items: center;
+//     }
+  }
+  
+  
+  @media only screen and (max-width:1920px){
+  
+  
+  }
+  
