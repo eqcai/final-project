@@ -24,6 +24,12 @@
     grid-template-areas:
         "image coursetext";
     grid-gap: 40px; 
+
+    @media (max-width: 680px) {
+        grid-template-areas: 
+        "image"
+        "coursetext"
+    }
 }
 
 
@@ -36,6 +42,10 @@
         width: 200px;
         height: 200px;
         margin: auto 0;           
+    }
+
+    @media (max-width: 680px) {
+        text-align: center;
     }
 }
 
