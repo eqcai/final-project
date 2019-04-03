@@ -5,3 +5,19 @@
     height: 200px;
 }
   
+
+.course-goals  {
+    border: 1px solid black;
+    margin: 20px 40px;
+    padding: 5px 20px;
+    display: flex;
+
+    p {
+        padding-left: 15px;
+    }
+
+    h1 {
+        text-align: center;
+        border-bottom: 1px solid #465788;
+    }
+}
