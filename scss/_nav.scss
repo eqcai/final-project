@@ -2,7 +2,12 @@ nav {
     color: #465788;
     display: flex;
     border-radius: 30px;
-
+    @media (max-width: 750px){
+      display: none;
+      .show & {
+        display: block;
+      }
+    }
   }
 
   header nav ul {
