@@ -1,5 +1,6 @@
 .course-overview {
-    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 0 10px #465788;
     margin: 20px 40px;
     padding: 5px 20px;
 
@@ -14,7 +15,8 @@
 }
 
 .comp1950-course-details {
-    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0 0 0 10px #465788;
     margin: 20px 40px;
 
     display: grid;
@@ -45,4 +47,8 @@
         border-bottom: 1px solid #465788;
     }
     
+}
+
+.about-outline {
+    margin-bottom: 30px;
 }

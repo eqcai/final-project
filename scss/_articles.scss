@@ -45,26 +45,33 @@ main article {
   display: block;
   padding:20px;
   margin: 0 auto;
-  border: solid black 1px;
+  // border: solid black 1px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 10px #465788;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
  .topic-summary article {
-   border: solid black 1px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 10px #465788;
    margin:0 20px 0 20px;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
+   margin-top: 30px;
  }
 
  .about-course article{
   background-color: lightgrey;
   margin:0 auto;
   padding:20px;
-  border: solid black 1px;
+  border-radius: 25px;
+  box-shadow: 0 0 0 10px #465788;
 }
 
 .outline-article {
   border: solid black 1px;
+  // border-radius: 25px;
+  // box-shadow: 0 0 0 10px #465788;
   display: flex;
   margin: 20px;
   font-size: 15px;
