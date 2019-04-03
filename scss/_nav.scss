@@ -22,6 +22,10 @@ nav {
     line-height: 4;
     justify-content: space-around;
     text-align: center;
+
+    @media (max-width: 770px) {
+      display: block;
+    }
   }
 
   header nav ul li {
@@ -35,6 +39,7 @@ nav {
     line-height: 46px;
     display: block;
     color: white;
+
   }
 
   header nav a:hover,
