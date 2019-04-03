@@ -44,17 +44,18 @@ main article {
  .index-outcome {
   display: block;
   padding:20px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   // border: solid black 1px;
   border-radius: 25px;
-  box-shadow: 0 0 0 10px #465788;
+  border: solid 10px #465788;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
  .topic-summary article {
   border-radius: 25px;
-  box-shadow: 0 0 0 10px #465788;
+  box-shadow:  10px #465788;
    margin:0 20px 0 20px;
    margin-bottom: 40px;
    margin-top: 30px;
@@ -75,5 +76,9 @@ main article {
   display: flex;
   margin: 20px;
   font-size: 15px;
+}
+
+.home-content {
+  padding: 10px 30px;
 }
 

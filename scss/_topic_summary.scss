@@ -3,9 +3,14 @@
 .topic-summary {
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    
 
     article {
         width: 32%;
+        border: 10px solid #465788;
     }
 
     .featured-image {
@@ -25,4 +30,13 @@
         }
     }
 
+    @media (max-width: 958px) {
+        
+        flex-direction: column;
+        article {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
 }
